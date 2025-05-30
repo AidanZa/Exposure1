@@ -11,11 +11,11 @@ public class Lab03 {
         int seconds = (left % 60000) / 1000;
         int miliseconds = milliseconds % 1000;
 
-        System.out.println("Starting milli-seconds: \t" + milliseconds);
+        System.out.println("Starting Milliseconds: \t" + milliseconds);
         System.out.println("Hours: \t\t\t\t\t\t" + hours);
         System.out.println("Minutes: \t\t\t\t\t" + minutes);
         System.out.println("Seconds: \t\t\t\t\t" + seconds);
-        System.out.println("Milli Seconds: \t\t\t\t" + miliseconds);
+        System.out.println("Milliseconds: \t\t\t\t" + miliseconds);
 
 
 
