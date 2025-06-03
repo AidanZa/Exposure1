@@ -5,13 +5,13 @@ package objects;
 public class Table {
 
     // Attributes
-    double height;
-    double width;
-    double weight;
-    double price;
-    double length;
+    private double height;
+    private double width;
+    private double weight;
+    private double price;
+    private double length;
 
-    // Default Constructor
+    // Default Constructor - Special method
     // name of the method = the name of the class
     public Table(){
         height = 23;
@@ -19,6 +19,15 @@ public class Table {
         weight = 52;
         price = 50;
         length = 936;
+    }
+
+    public Table(double height, double width, double weight, double price, double length) {
+        this.height = height;
+        this.width = width;
+        this.weight = weight;
+        this.price = price;
+        this.length = length;
+
     }
 
     // Getters/Accessors
@@ -37,11 +46,35 @@ public class Table {
     public double getprice(){
         return price;
     }
+
     public double getlength(){
         return length;
     }
 
+    // Setters/Mutators
+    public void setheight(double height){
+        this.height = height;
+    }
 
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public void setlength(double length){
+        this.length = length;
+    }
+
+    public void setwidth(double width) {
+        this.width = width;
+    }
+
+    public void setweight(double weight) {
+        if (weight <= 1000) {
+            this.weight = weight;
+        }else{
+            this.weight = 1000;
+        }
+    }
 
 
 
